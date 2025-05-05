@@ -15,7 +15,7 @@ jobs:
         run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v18
+        uses: harsh-veefin/docker-react
         with:
           application_name: frontend
           environment_name: frontend-env
