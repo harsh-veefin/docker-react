@@ -15,7 +15,7 @@ jobs:
         run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
-        uses: harsh-veefin/docker-react
+        uses: harsh-veefin/docker-react@master
         with:
           application_name: frontend
           environment_name: frontend-env
